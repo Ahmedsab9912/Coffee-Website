@@ -8,66 +8,74 @@
     <!-- Linking font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <!-- Linking Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
 </head>
 
 <body>
     <!-- Header / Navbar -->
     <header>
         <nav class="navbar section-content">
-            <a href="#" class="nav-logo">
+            <a href="#home" class="nav-logo">
                 <h2 class="logo-text">☕️ Coffee</h2>
             </a>
             <ul class="nav-menu">
                 <button id="menu-close-button" class="fas fa-times"></button>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
+                    <a href="#home" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
+                    <a href="#about" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Menu</a>
+                    <a href="#menu" class="nav-link">Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Testimonials</a>
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Gallery</a>
+                    <a href="#gallery" class="nav-link">Gallery</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
+                    <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
-             <button id="menu-open-button" class="fas fa-bars"></button>
+            <button id="menu-open-button" class="fas fa-bars"></button>
         </nav>
     </header>
     <!-- Hero section -->
     <main>
-        <section class="hero-section">
+        <section class="hero-section" id="home">
             <div class="section-content">
                 <div class="hero-details">
                     <h2 class="title">Best Coffee</h2>
                     <h3 class="subtitle">Make your day great with our special coffee!</h3>
-                    <p class="description">Welcome to our coffee paradise, where every bean tells a story and every cup sparks joy.</p>
+                    <p class="description">Welcome to our coffee paradise, where every bean tells a story and every cup
+                        sparks joy.</p>
                     <div class="buttons">
                         <a href="" class="button order-now">Order Now</a>
                         <a href="" class="button contact-us">Contact Us</a>
                     </div>
                 </div>
                 <div class="hero-image-wrapper">
-                    <img src="https://png.pngtree.com/png-clipart/20231020/original/pngtree-iced-coffee-png-png-image_13381335.png" alt="Hero" class="hero-image">
+                    <img src="https://png.pngtree.com/png-clipart/20231020/original/pngtree-iced-coffee-png-png-image_13381335.png"
+                        alt="Hero" class="hero-image">
                 </div>
             </div>
         </section>
         <!-- About section -->
-         <section class="about-section">
+        <section class="about-section" id="about">
             <div class="section-content">
                 <div class="about-image-wrapper">
-                    <img src="https://images.pexels.com/photos/4255410/pexels-photo-4255410.jpeg" alt="About" class="about-image">
+                    <img src="https://images.pexels.com/photos/4255410/pexels-photo-4255410.jpeg" alt="About"
+                        class="about-image">
                 </div>
                 <div class="about-details">
                     <h2 class="section-title">About Us</h2>
-                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus mollitia ut eaque maxime est nisi, nam ab, dicta consequuntur numquam voluptatem repudiandae quam aliquid. Rem laudantium aliquam explicabo fugit fugiat temporibus quisquam illum aspernatur blanditiis quidem vero architecto, nam nemo error esse quod tenetur qui.</p>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus mollitia ut eaque
+                        maxime est nisi, nam ab, dicta consequuntur numquam voluptatem repudiandae quam aliquid. Rem
+                        laudantium aliquam explicabo fugit fugiat temporibus quisquam illum aspernatur blanditiis quidem
+                        vero architecto, nam nemo error esse quod tenetur qui.</p>
                     <div class="social-link-list">
                         <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
                         <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
@@ -75,46 +83,224 @@
                     </div>
                 </div>
             </div>
-         </section>
-          <!-- Menu section -->
-           <section class="menu-section">
+        </section>
+        <!-- Menu section -->
+        <section class="menu-section" id="menu">
             <h2 class="section-title">Our Menu</h2>
             <div class="section-content">
                 <ul class="menu-list">
                     <li class="menu-item">
-                        <img src="https://png.pngtree.com/png-vector/20250115/ourmid/pngtree-hot-coffee-cup-png-image_15204616.png" alt="" class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&q=80&w=600&h=600"
+                            alt="Hot Beverages" class="menu-image">
                         <h3 class="name">Hot Beverages</h3>
-                        <p class="text">Wide range of steaming hot coffee to make you fresh and light</p>
+                        <p class="text">A wide range of steaming hot coffees and lattes to keep you warm and energized.
+                        </p>
                     </li>
                     <li class="menu-item">
-                        <img src="https://png.pngtree.com/png-clipart/20231020/original/pngtree-iced-coffee-png-png-image_13381335.png" alt="" class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&q=80&w=600&h=600"
+                            alt="Cold Beverages" class="menu-image">
                         <h3 class="name">Cold Beverages</h3>
-                        <p class="text">Wide range of breezing cold coffee to make you fresh and light</p>
+                        <p class="text">Refreshing, crisp iced coffees and cold brews perfect for a cool morning or
+                            afternoon pick-me-up.</p>
                     </li>
                     <li class="menu-item">
-                        <img src="https://freepngimg.com/save/22809-bread-clipart/1280x853" alt="" class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1608686207856-001b95cf60ca?auto=format&fit=crop&q=80&w=600&h=600"
+                            alt="Refreshment" class="menu-image">
                         <h3 class="name">Refreshment</h3>
-                        <p class="text">Wide range of steaming hot coffee to make you fresh and light</p>
+                        <p class="text">Freshly baked artisan breads, croissants, and savory snacks to complement your
+                            drink.</p>
                     </li>
                     <li class="menu-item">
-                        <img src="https://static.vecteezy.com/system/resources/previews/027/182/570/non_2x/assorted-pile-of-colorful-delicious-donut-isolated-on-a-transparent-background-png.png" alt="" class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&q=80&w=600&h=600"
+                            alt="Special Combos" class="menu-image">
                         <h3 class="name">Special Combos</h3>
-                        <p class="text">Wide range of steaming hot coffee to make you fresh and light</p>
+                        <p class="text">Our curated pairings of handcrafted drinks and fresh bakery treats at a special
+                            price.</p>
                     </li>
                     <li class="menu-item">
-                        <img src="https://png.pngtree.com/png-clipart/20240518/original/pngtree-bakery-shop-desserts-sweet-cakes-and-cookies-png-image_15121469.png" alt="" class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&q=80&w=600&h=600"
+                            alt="Dessert" class="menu-image">
                         <h3 class="name">Dessert</h3>
-                        <p class="text">Wide range of steaming hot coffee to make you fresh and light</p>
+                        <p class="text">Indulge your sweet tooth with our decadent selection of cakes, tarts, and
+                            gourmet donuts.</p>
                     </li>
                     <li class="menu-item">
-                        <img src="https://png.pngtree.com/png-clipart/20240325/original/pngtree-food-burger-fries-drink-png-image_14679691.png" alt="" class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=600&h=600"
+                            alt="Burger & French Fries" class="menu-image">
                         <h3 class="name">Burger & French Fries</h3>
-                        <p class="text">Wide range of steaming hot coffee to make you fresh and light</p>
+                        <p class="text">Hearty, flame-grilled burgers served with a side of golden, perfectly seasoned
+                            French fries.</p>
                     </li>
                 </ul>
             </div>
-           </section>
+        </section>
+        <!-- Testimonials section -->
+        <section class="testimonials-section" id="testimonials">
+            <h2 class="section-title">Testimonials</h2>
+            <div class="section-content">
+                <div class="slider-container swiper">
+                    <ul class="testimonials swiper-wrapper">
+                        <li class="testimonial swiper-slide">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150&h=150"
+                                alt="Sarah Johnson" class="user-image">
+                            <h3 class="name">Sarah Johnson</h3>
+                            <i class="feedback">"Loved the french roast. Perfectly balanced and rich. Will order
+                                again!"</i>
+                        </li>
+                        <li class="testimonial swiper-slide">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150&h=150"
+                                alt="Marcus Chen" class="user-image">
+                            <h3 class="name">Marcus Chen</h3>
+                            <i class="feedback">"The cold brew blend is incredibly smooth. No bitter aftertaste at
+                                all."</i>
+                        </li>
+                        <li class="testimonial swiper-slide">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150&h=150"
+                                alt="Elena Rostova" class="user-image">
+                            <h3 class="name">Elena Rostova</h3>
+                            <i class="feedback">"Fast shipping and the beans were roasted just days before arriving.
+                                Outstanding quality."</i>
+                        </li>
+                        <li class="testimonial swiper-slide">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150&h=150"
+                                alt="David Miller" class="user-image">
+                            <h3 class="name">David Miller</h3>
+                            <i class="feedback">"My morning espresso has never tasted better. The crema on this roast is
+                                beautiful."</i>
+                        </li>
+                        <li class="testimonial swiper-slide">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150&h=150"
+                                alt="Aisha Rahman" class="user-image">
+                            <h3 class="name">Aisha Rahman</h3>
+                            <i class="feedback">"The Ethiopian single-origin has amazing floral and citrus notes.
+                                Absolutely love it."</i>
+                        </li>
+                        <li class="testimonial swiper-slide">
+                            <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=80&w=150&h=150"
+                                alt="Liam Davies" class="user-image">
+                            <h3 class="name">Liam Davies</h3>
+                            <i class="feedback">"Great customer service and even better coffee. The subscription model
+                                is a lifesaver."</i>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Gallery section -->
+        <section class="gallery-section" id="gallery">
+            <h2 class="section-title">Gallery</h2>
+            <div class="section-content">
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&q=80&w=600&h=600" alt="Latte Art">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-coffee"></i>
+                            <h3>Latte Art</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&q=80&w=600&h=600" alt="Fresh Brewing">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-mug-hot"></i>
+                            <h3>Fresh Brewing</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=600&h=600" alt="Espresso Machine">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-cogs"></i>
+                            <h3>Espresso Machine</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&q=80&w=600&h=600" alt="Pour Over">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-fill-drip"></i>
+                            <h3>Pour Over</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1507133750040-4a8f57021571?auto=format&fit=crop&q=80&w=600&h=600" alt="Iced Coffee">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-glass-martini-alt"></i>
+                            <h3>Iced Cold Brew</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&q=80&w=600&h=600" alt="Espresso Cup">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-mug-hot"></i>
+                            <h3>Rich Espresso</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact section -->
+        <section class="contact-section" id="contact">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="section-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info-details">
+                            <h3>Our Location</h3>
+                            <p>123 Coffee Street, Espresso City, NY 10001</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="info-details">
+                            <h3>Phone Number</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info-details">
+                            <h3>Email Address</h3>
+                            <p>info@coffee.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div class="info-details">
+                            <h3>Opening Hours</h3>
+                            <p>Mon - Sat: 07:00 AM - 09:00 PM<br>Sunday: 08:00 AM - 06:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <form action="#" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required class="form-input"></textarea>
+                    </div>
+                    <button type="submit" class="button submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
     </main>
+    <!-- Footer section -->
+    <footer>
+        <div class="section-content footer-content">
+            <button id="scroll-to-top-button" class="fas fa-chevron-up" aria-label="Scroll to top"></button>
+            <p class="copyright-text">&copy; 2026 Coffee. All Rights Reserved. (Coffee & Rules)</p>
+        </div>
+    </footer>
+    <!-- Linking Swiper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- Linking Custom script -->
     <script src="script.js"></script>
 </body>
 
