@@ -141,9 +141,10 @@ header .navbar {
   z-index: 2;
   display: flex;
   align-items: center;
+  justify-content: center;
   min-height: 100vh;
   color: var(--white-color);
-  justify-content: space-between;
+  text-align: center;
 }
 
 /* Keyframes for Hero Animations */
@@ -170,6 +171,13 @@ header .navbar {
   }
 }
 
+.hero-section .hero-details {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .hero-section .hero-details .title {
   font-size: var(--font-size-xxl);
   color: var(--secondary-color);
@@ -179,7 +187,7 @@ header .navbar {
 
 .hero-section .hero-details .subtitle {
   margin-top: 8px;
-  max-width: 70%;
+  max-width: 100%;
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-semibold);
   opacity: 0;
@@ -187,7 +195,7 @@ header .navbar {
 }
 
 .hero-section .hero-details .description {
-  max-width: 70%;
+  max-width: 100%;
   margin: 24px 0 40px;
   font-size: var(--font-size-m);
   opacity: 0;
@@ -197,6 +205,7 @@ header .navbar {
 .hero-section .hero-details .buttons {
   display: flex;
   gap: 23px;
+  justify-content: center;
   opacity: 0;
   animation: fadeInUp 0.8s ease 0.6s forwards;
 }
@@ -222,16 +231,6 @@ header .navbar {
   color: var(--primary-color);
   border-color: var(--secondary-color);
   background: var(--secondary-color);
-}
-
-.hero-section .hero-image-wrapper {
-  max-width: 500px;
-  margin-right: 30px;
-}
-
-.hero-section .hero-image-wrapper .hero-image {
-  opacity: 0;
-  animation: floatImage 4s ease-in-out infinite, fadeInUp 1s ease 0.4s forwards;
 }
 
 /* About section styling */
@@ -522,13 +521,31 @@ header .navbar {
     font-size: var(--font-size-l);
   }
   .hero-section .section-content {
-    gap: 50px;
+    padding: 120px 20px 60px;
     text-align: center;
-    padding: 30px 20px 20px;
-    flex-direction: column-reverse;
     justify-content: center;
   }
-  .hero-section .hero-details :is(.subtitle, .description),
+  .hero-section .hero-details {
+    max-width: 100%;
+  }
+  .about-section .section-content {
+    flex-direction: column-reverse; /* Details on top, image at the bottom */
+    gap: 50px;
+    align-items: center;
+  }
+  .about-section .about-details {
+    max-width: 100%;
+    text-align: center;
+  }
+  .about-section .about-image-wrapper {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .about-section .about-details .text {
+    text-align: center;
+    margin: 20px 0 30px;
+  }
   .about-section .about-details .section-title {
     text-align: center;
   }
@@ -563,6 +580,35 @@ header .navbar {
   .menu-section .menu-list {
     grid-template-columns: 1fr;
     gap: 30px;
+  }
+  
+  /* Hero typography scaling and centering for small mobile screen */
+  .hero-section .hero-details .title {
+    font-size: 2.2rem;
+  }
+  .hero-section .hero-details .subtitle {
+    font-size: 1.3rem;
+  }
+  .hero-section .hero-details .description {
+    font-size: 0.95rem;
+    margin: 15px 0 25px;
+  }
+  .hero-section .hero-details .buttons {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    max-width: 280px;
+  }
+  .hero-section .hero-details .button {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* About section stats stacking for mobile screen */
+  .about-stats {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
   }
 }
 
