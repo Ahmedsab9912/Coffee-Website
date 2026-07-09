@@ -77,3 +77,30 @@ const swiper = new Swiper('.slider-container', {
     }
   }
 });
+
+/* 
+  Hero Section Background Image Slider
+  Automatically cycles through a list of high-quality coffee shop images every 3 seconds (3000ms).
+  Uses CSS transition for smooth cross-fading.
+*/
+const heroBgImages = [
+  "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&q=80&w=1600&h=900",
+  "https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&q=80&w=1600&h=900",
+  "https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&q=80&w=1600&h=900"
+];
+
+let currentBgIndex = 0;
+const heroSection = document.querySelector(".hero-section");
+
+function changeHeroBackground() {
+  if (heroSection) {
+    heroSection.style.backgroundImage = `url('${heroBgImages[currentBgIndex]}')`;
+    currentBgIndex = (currentBgIndex + 1) % heroBgImages.length;
+  }
+}
+
+// Initial background load
+changeHeroBackground();
+
+// Change background every 3 seconds
+setInterval(changeHeroBackground, 3000);
